@@ -1,0 +1,79 @@
+/* ══════════════════════════════════════════
+   Custom Input
+   ══════════════════════════════════════════ */
+
+/* ── Wrapper ── */
+.custom-input-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.custom-input-wrapper-block {
+  display: flex;
+  width: 100%;
+}
+
+/* ── Label ── */
+.custom-input-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #262626;
+  transition: color 0.3s;
+}
+
+[data-theme="dark"] .custom-input-label {
+  color: #d9d9d9;
+}
+
+/* ── Base ── */
+.custom-input.ant-input,
+.custom-input.ant-input-affix-wrapper {
+  border-radius: 8px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-input.ant-input:hover,
+.custom-input.ant-input-affix-wrapper:hover {
+  border-color: #4096ff;
+}
+
+.custom-input.ant-input:focus,
+.custom-input.ant-input-affix-wrapper:focus,
+.custom-input.ant-input-affix-wrapper-focused {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.1);
+}
+
+/* ── Sizes ── */
+.custom-input-sm.ant-input,
+.custom-input-sm.ant-input-affix-wrapper {
+  height: 32px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.custom-input-md.ant-input,
+.custom-input-md.ant-input-affix-wrapper {
+  height: 40px;
+  font-size: 14px;
+}
+
+.custom-input-lg.ant-input,
+.custom-input-lg.ant-input-affix-wrapper {
+  height: 48px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+/* ── Rounded ── */
+.custom-input-rounded.ant-input,
+.custom-input-rounded.ant-input-affix-wrapper {
+  border-radius: 999px;
+}
+
+/* ── Block ── */
+.custom-input-block.ant-input,
+.custom-input-block.ant-input-affix-wrapper {
+  width: 100%;
+}

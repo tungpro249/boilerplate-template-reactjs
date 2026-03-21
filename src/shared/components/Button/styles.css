@@ -1,0 +1,246 @@
+/* ══════════════════════════════════════════
+   Custom Button – Overrides & Variants
+   ══════════════════════════════════════════ */
+
+/* ── Base reset ── */
+.custom-btn.ant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ── Size ── */
+.custom-btn.custom-btn-sm.ant-btn {
+  height: 30px;
+  padding: 0 12px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.custom-btn.custom-btn-md.ant-btn {
+  height: 36px;
+  padding: 0 18px;
+  font-size: 13px;
+}
+
+.custom-btn.custom-btn-lg.ant-btn {
+  height: 44px;
+  padding: 0 24px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+/* ══════════════════════════════════════════
+   Variant: Solid (Primary)
+   ══════════════════════════════════════════ */
+.custom-btn-solid.ant-btn {
+  background: linear-gradient(135deg, #1677ff 0%, #4096ff 100%);
+  border: none;
+  color: #fff;
+}
+
+.custom-btn-solid.ant-btn:hover,
+.custom-btn-solid.ant-btn:focus {
+  background: linear-gradient(135deg, #0958d9 0%, #1677ff 100%);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(22, 119, 255, 0.35);
+}
+
+.custom-btn-solid.ant-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(22, 119, 255, 0.25);
+}
+
+/* ── Danger ── */
+.custom-btn-solid.custom-btn-danger.ant-btn {
+  background: linear-gradient(135deg, #ff4d4f 0%, #ff7875 100%);
+}
+
+.custom-btn-solid.custom-btn-danger.ant-btn:hover,
+.custom-btn-solid.custom-btn-danger.ant-btn:focus {
+  background: linear-gradient(135deg, #cf1322 0%, #ff4d4f 100%);
+  box-shadow: 0 4px 14px rgba(255, 77, 79, 0.35);
+}
+
+/* ── Success ── */
+.custom-btn-solid.custom-btn-success.ant-btn {
+  background: linear-gradient(135deg, #52c41a 0%, #73d13d 100%);
+}
+
+.custom-btn-solid.custom-btn-success.ant-btn:hover,
+.custom-btn-solid.custom-btn-success.ant-btn:focus {
+  background: linear-gradient(135deg, #389e0d 0%, #52c41a 100%);
+  box-shadow: 0 4px 14px rgba(82, 196, 26, 0.35);
+}
+
+/* ── Warning ── */
+.custom-btn-solid.custom-btn-warning.ant-btn {
+  background: linear-gradient(135deg, #faad14 0%, #ffc53d 100%);
+  color: #fff;
+}
+
+.custom-btn-solid.custom-btn-warning.ant-btn:hover,
+.custom-btn-solid.custom-btn-warning.ant-btn:focus {
+  background: linear-gradient(135deg, #d48806 0%, #faad14 100%);
+  box-shadow: 0 4px 14px rgba(250, 173, 20, 0.35);
+}
+
+/* ══════════════════════════════════════════
+   Variant: Outline
+   ══════════════════════════════════════════ */
+.custom-btn-outline.ant-btn {
+  background: transparent;
+  border: 1.5px solid #1677ff;
+  color: #1677ff;
+}
+
+.custom-btn-outline.ant-btn:hover,
+.custom-btn-outline.ant-btn:focus {
+  background: #f0f5ff;
+  border-color: #4096ff;
+  color: #4096ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(22, 119, 255, 0.12);
+}
+
+.custom-btn-outline.custom-btn-danger.ant-btn {
+  border-color: #ff4d4f;
+  color: #ff4d4f;
+}
+
+.custom-btn-outline.custom-btn-danger.ant-btn:hover {
+  background: #fff1f0;
+  border-color: #ff7875;
+  color: #ff7875;
+  box-shadow: 0 4px 14px rgba(255, 77, 79, 0.12);
+}
+
+.custom-btn-outline.custom-btn-success.ant-btn {
+  border-color: #52c41a;
+  color: #52c41a;
+}
+
+.custom-btn-outline.custom-btn-success.ant-btn:hover {
+  background: #f6ffed;
+  border-color: #73d13d;
+  color: #73d13d;
+  box-shadow: 0 4px 14px rgba(82, 196, 26, 0.12);
+}
+
+.custom-btn-outline.custom-btn-warning.ant-btn {
+  border-color: #faad14;
+  color: #faad14;
+}
+
+.custom-btn-outline.custom-btn-warning.ant-btn:hover {
+  background: #fffbe6;
+  border-color: #ffc53d;
+  color: #ffc53d;
+  box-shadow: 0 4px 14px rgba(250, 173, 20, 0.12);
+}
+
+/* ══════════════════════════════════════════
+   Variant: Ghost
+   ══════════════════════════════════════════ */
+.custom-btn-ghost.ant-btn {
+  background: transparent;
+  border: none;
+  color: #1677ff;
+}
+
+.custom-btn-ghost.ant-btn:hover,
+.custom-btn-ghost.ant-btn:focus {
+  background: #f0f5ff;
+  color: #4096ff;
+}
+
+.custom-btn-ghost.custom-btn-danger.ant-btn {
+  color: #ff4d4f;
+}
+
+.custom-btn-ghost.custom-btn-danger.ant-btn:hover {
+  background: #fff1f0;
+  color: #ff7875;
+}
+
+.custom-btn-ghost.custom-btn-success.ant-btn {
+  color: #52c41a;
+}
+
+.custom-btn-ghost.custom-btn-success.ant-btn:hover {
+  background: #f6ffed;
+  color: #73d13d;
+}
+
+/* ══════════════════════════════════════════
+   Variant: Dashed
+   ══════════════════════════════════════════ */
+.custom-btn-dashed.ant-btn {
+  background: transparent;
+  border: 1.5px dashed #d9d9d9;
+  color: #595959;
+}
+
+.custom-btn-dashed.ant-btn:hover,
+.custom-btn-dashed.ant-btn:focus {
+  border-color: #1677ff;
+  color: #1677ff;
+  background: #f0f5ff;
+}
+
+/* ══════════════════════════════════════════
+   State: Disabled
+   ══════════════════════════════════════════ */
+.custom-btn.ant-btn:disabled,
+.custom-btn.ant-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ══════════════════════════════════════════
+   State: Loading
+   ══════════════════════════════════════════ */
+.custom-btn.custom-btn-loading.ant-btn {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+/* ══════════════════════════════════════════
+   Block (full-width)
+   ══════════════════════════════════════════ */
+.custom-btn.custom-btn-block.ant-btn {
+  width: 100%;
+}
+
+/* ══════════════════════════════════════════
+   Icon-only (circle / square)
+   ══════════════════════════════════════════ */
+.custom-btn.custom-btn-icon-only.ant-btn {
+  padding: 0;
+  min-width: 36px;
+  width: 36px;
+}
+
+.custom-btn.custom-btn-icon-only.custom-btn-sm.ant-btn {
+  min-width: 30px;
+  width: 30px;
+}
+
+.custom-btn.custom-btn-icon-only.custom-btn-lg.ant-btn {
+  min-width: 44px;
+  width: 44px;
+}
+
+.custom-btn.custom-btn-rounded.ant-btn {
+  border-radius: 999px;
+}

@@ -1,0 +1,57 @@
+/* ══════════════════════════════════════════
+   Products Page
+   ══════════════════════════════════════════ */
+
+/* ── Page header ── */
+.products-page-header {
+  margin-bottom: 20px;
+}
+
+.products-page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px 0;
+  transition: color 0.3s;
+}
+
+[data-theme="dark"] .products-page-title {
+  color: #e8e8e8;
+}
+
+.products-page-desc {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+/* ── Pagination ── */
+.products-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+  transition: border-color 0.3s;
+}
+
+[data-theme="dark"] .products-pagination {
+  border-top-color: #303030;
+}
+
+/* ── Empty ── */
+.products-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s;
+}
+
+[data-theme="dark"] .products-empty {
+  background: #1f1f1f;
+  border-color: #303030;
+}

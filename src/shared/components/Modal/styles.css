@@ -1,0 +1,76 @@
+/* ══════════════════════════════════════════
+   Custom Modal
+   ══════════════════════════════════════════ */
+
+/* ── Base ── */
+.custom-modal .ant-modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08),
+              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.custom-modal .ant-modal-header {
+  padding: 20px 24px 12px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.custom-modal .ant-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  transition: color 0.3s;
+}
+
+[data-theme="dark"] .custom-modal .ant-modal-title {
+  color: #e8e8e8;
+}
+
+.custom-modal .ant-modal-body {
+  padding: 12px 24px 24px;
+}
+
+.custom-modal .ant-modal-footer {
+  padding: 12px 24px 20px;
+  border-top: 1px solid #f0f0f0;
+  transition: border-color 0.3s;
+}
+
+[data-theme="dark"] .custom-modal .ant-modal-footer {
+  border-top-color: #303030;
+}
+
+/* ── Close button ── */
+.custom-modal .ant-modal-close {
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.custom-modal .ant-modal-close:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .custom-modal .ant-modal-close:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ── No padding ── */
+.custom-modal-no-padding .ant-modal-body {
+  padding: 0;
+}
+
+/* ── Overlay ── */
+.custom-modal .ant-modal-mask {
+  backdrop-filter: blur(4px);
+}
+
+/* ── Animation override ── */
+.custom-modal .ant-modal {
+  animation-duration: 0.25s;
+}

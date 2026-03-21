@@ -1,0 +1,105 @@
+/* ══════════════════════════════════════════
+   Custom Card
+   ══════════════════════════════════════════ */
+
+/* ── Base ── */
+.custom-card.ant-card {
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* ── Variant: Default ── */
+.custom-card-default.ant-card {
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03),
+              0 1px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="dark"] .custom-card-default.ant-card {
+  border-color: #303030;
+}
+
+/* ── Variant: Bordered ── */
+.custom-card-bordered.ant-card {
+  border: 1.5px solid #d9d9d9;
+  box-shadow: none;
+}
+
+[data-theme="dark"] .custom-card-bordered.ant-card {
+  border-color: #434343;
+}
+
+/* ── Variant: Shadow ── */
+.custom-card-shadow.ant-card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06),
+              0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .custom-card-shadow.ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2),
+              0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+/* ── Variant: Flat ── */
+.custom-card-flat.ant-card {
+  border: none;
+  box-shadow: none;
+  background: #fafafa;
+}
+
+[data-theme="dark"] .custom-card-flat.ant-card {
+  background: #1f1f1f;
+}
+
+/* ── Hoverable ── */
+.custom-card-hoverable.ant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1),
+              0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .custom-card-hoverable.ant-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3),
+              0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Header ── */
+.custom-card.ant-card .ant-card-head {
+  min-height: 52px;
+  padding: 0 20px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: border-color 0.3s;
+}
+
+[data-theme="dark"] .custom-card.ant-card .ant-card-head {
+  border-bottom-color: #303030;
+}
+
+.custom-card.ant-card .ant-card-head-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ── Body ── */
+.custom-card.ant-card .ant-card-body {
+  padding: 20px;
+}
+
+/* ── Padding variants ── */
+.custom-card-padding-none.ant-card .ant-card-body {
+  padding: 0;
+}
+
+.custom-card-padding-sm.ant-card .ant-card-body {
+  padding: 12px;
+}
+
+.custom-card-padding-md.ant-card .ant-card-body {
+  padding: 20px;
+}
+
+.custom-card-padding-lg.ant-card .ant-card-body {
+  padding: 32px;
+}
