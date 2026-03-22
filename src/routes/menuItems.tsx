@@ -4,6 +4,7 @@ import {
   UserOutlined,
   SettingOutlined,
   AppstoreOutlined,
+  BuildOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 
@@ -29,6 +30,11 @@ const menuItems: MenuItem[] = [
       { key: "users", icon: <UserOutlined />, label: "Người dùng" },
       { key: "products", label: "Sản phẩm" },
     ],
+  },
+  {
+    key: "components",
+    icon: <BuildOutlined />,
+    label: "Components",
   },
   {
     key: "settings",

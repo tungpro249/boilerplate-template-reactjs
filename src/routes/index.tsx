@@ -7,6 +7,7 @@ import Products from "../views/products";
 import Settings from "../views/settings";
 import NotFound from "../views/NotFound";
 import Table from "../views/table";
+import ComponentShowcase from "../views/components";
 import Login from "../views/auth/Login";
 import Register from "../views/auth/Register";
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: "users", element: <Users />, handle: { breadcrumb: "Người dùng" } },
       { path: "products", element: <Products />, handle: { breadcrumb: "Sản phẩm" } },
       { path: "settings", element: <Settings />, handle: { breadcrumb: "Cài đặt" } },
+      { path: "components", element: <ComponentShowcase />, handle: { breadcrumb: "Components" } },
     ],
   },
   {
