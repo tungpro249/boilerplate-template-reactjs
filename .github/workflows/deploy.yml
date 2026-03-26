@@ -20,7 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        cache: 'npm'
 
       - name: Build project
         run: npm run build
