@@ -1,5 +1,5 @@
 const Settings = () => {
-  return <div>Cài đặt</div>;
+  return <div>test cicd with github action</div>;
 };
 
 export default Settings;
